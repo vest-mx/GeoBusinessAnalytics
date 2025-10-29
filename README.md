@@ -196,6 +196,7 @@ pip install -r requirements.txt
 Конвертируйте: python kepler_converter.py
 
 5. Запуск
+   
     Генерация данных # python datapol/gendata.py
 
     Запуск приложения # python datapol/app.py
