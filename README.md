@@ -102,3 +102,106 @@ MIT License - смотрите файл [LICENSE](https://license/)
 ## 👨‍💻 Автор
 
 **Ваше Имя** - [GitHub](https://github.com/vest-mx)
+
+
+
+
+---
+
+## 📋 **ДОПОЛНИТЕЛЬНЫЕ ФАЙЛЫ**
+
+### **1. requirements.txt (обновленный)**
+```txt
+# Основные
+dash>=2.14.0
+plotly>=5.15.0
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Геоданные
+folium>=0.15.0
+shapely>=2.0.0
+geopandas>=0.13.0
+
+# База данных
+duckdb>=0.9.0
+
+# Генерация данных
+faker>=18.0.0
+tqdm>=4.65.0
+
+# Утилиты
+werkzeug>=2.3.0
+click>=8.1.0
+
+2. .gitignore
+
+gitignore
+# Данные
+*.duckdb
+data.csv
+temp_*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+3. docs/setup_guide.md
+
+# 📚 Полное руководство по установке
+
+## 1. Клонирование репозитория
+git clone https://github.com/yourname/pybot-geo-analytics
+cd pybot-geo-analytics
+
+
+2. Создание виртуального окружения
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate     # Windows
+
+
+3. Установка зависимостей
+pip install -r requirements.txt
+
+4. Настройка полигона
+Откройте Kepler.gl
+Нарисуйте нужный регион
+Сохраните как kepler.gl.json
+Конвертируйте: python kepler_converter.py
+
+5. Запуск
+
+# Генерация данных
+python datapol/gendata.py
+
+# Запуск приложения  
+python datapol/app.py
