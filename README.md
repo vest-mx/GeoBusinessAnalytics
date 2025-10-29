@@ -29,7 +29,7 @@
 
 # 1. Установка зависимостей
 
-git clone https://github.com/yourname/pybot-geo-analytics
+git clone https://github.com/vest-mx/pybot-geo-analytics
 cd pybot-geo-analytics
 
 pip install -r requirements.txt
@@ -176,7 +176,7 @@ Thumbs.db
 # 📚 Полное руководство по установке
 
 1. Клонирование репозитория  
-git clone https://github.com/yourname/pybot-geo-analytics  
+git clone https://github.com/vest-mx/pybot-geo-analytics  
 cd pybot-geo-analytics  
 
 
