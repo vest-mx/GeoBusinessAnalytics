@@ -44,9 +44,9 @@ python datapol/app.py
 
 
 
-### Генерация данных
+# Генерация данных
 
-# Создает распределение с "городами"
+### Создает распределение с "городами"
 df = generate_points_in_polygon(
     polygon=polygon, 
     num_points=10_000, 
