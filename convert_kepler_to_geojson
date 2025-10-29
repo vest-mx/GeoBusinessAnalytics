@@ -1,0 +1,28 @@
+import json
+
+INP = "/Users/mariakrivorotova/PycharmProjects/pybot/datapol/kepler.gl.json"
+OUT = "/Users/mariakrivorotova/PycharmProjects/pybot/datapol/polygon_data.json"
+
+with open(INP, encoding="utf-8") as f:
+    data = json.load(f)
+
+features = data["config"]["config"]["visState"]["editor"]["features"]
+geoms = [feat["geometry"] for feat in features if "geometry" in feat]
+
+if not geoms:
+    raise ValueError("В файле нет геометрий. Убедись, что ты нарисовал(а) полигон.")
+
+if len(geoms) == 1:
+    geom = geoms[0]
+elif all(g["type"] == "Polygon" for g in geoms):
+    geom = {"type": "MultiPolygon", "coordinates": [g["coordinates"] for g in geoms]}
+else:
+    geom = {
+        "type": "FeatureCollection",
+        "features": [{"type": "Feature", "properties": {}, "geometry": g} for g in geoms],
+    }
+
+with open(OUT, "w", encoding="utf-8") as f:
+    json.dump(geom, f, ensure_ascii=False)
+
+print(f"Готово: {OUT}")
