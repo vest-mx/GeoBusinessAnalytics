@@ -175,18 +175,18 @@ Thumbs.db
 
 # 📚 Полное руководство по установке
 
-1. Клонирование репозитория
-git clone https://github.com/yourname/pybot-geo-analytics
-cd pybot-geo-analytics
+1. Клонирование репозитория  
+git clone https://github.com/yourname/pybot-geo-analytics  
+cd pybot-geo-analytics  
 
 
-2. Создание виртуального окружения
+2. Создание виртуального окружения  
 python -m venv venv
-source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate     # Windows
+source venv/bin/activate  # Linux/Mac  
+venv\Scripts\activate     # Windows  
 
 
-3. Установка зависимостей
+3. Установка зависимостей  
 pip install -r requirements.txt
 
 4. Настройка полигона  
