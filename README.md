@@ -101,7 +101,7 @@ MIT License - смотрите файл [LICENSE](https://license/)
 
 ## 👨‍💻 Автор
 
-**Ваше Имя** - [GitHub](https://github.com/vest-mx)
+[GitHub](https://github.com/vest-mx)
 
 
 
