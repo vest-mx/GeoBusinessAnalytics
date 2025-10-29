@@ -189,11 +189,11 @@ venv\Scripts\activate     # Windows
 3. Установка зависимостей
 pip install -r requirements.txt
 
-4. Настройка полигона /n
-Откройте Kepler.gl /n
-Нарисуйте нужный регион
-Сохраните как kepler.gl.json
-Конвертируйте: python kepler_converter.py
+4. Настройка полигона  
+Откройте Kepler.gl  
+Нарисуйте нужный регион  
+Сохраните как kepler.gl.json  
+Конвертируйте: python kepler_converter.py  
 
 5. Запуск
    
