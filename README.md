@@ -109,40 +109,37 @@ MIT License - смотрите файл [LICENSE](https://license/)
 ---
 
 ## 📋 **ДОПОЛНИТЕЛЬНЫЕ ФАЙЛЫ**
+requirements.txt 
 
-1. requirements.txt 
-txt
-# Основные
+### Основные
 dash>=2.14.0
 plotly>=5.15.0
 pandas>=2.0.0
 numpy>=1.24.0
 
-# Геоданные
+### Геоданные
 folium>=0.15.0
 shapely>=2.0.0
 geopandas>=0.13.0
 
-# База данных
+### База данных
 duckdb>=0.9.0
 
-# Генерация данных
+### Генерация данных
 faker>=18.0.0
 tqdm>=4.65.0
 
-# Утилиты
+### Утилиты
 werkzeug>=2.3.0
 click>=8.1.0
 
-2. .gitignore
-
 gitignore
-# Данные
+### Данные
 *.duckdb
 data.csv
 temp_*
 
-# Python
+### Python
 __pycache__/
 *.py[cod]
 *$py.class
@@ -164,13 +161,13 @@ wheels/
 .installed.cfg
 *.egg
 
-# IDE
+### IDE
 .vscode/
 .idea/
 *.swp
 *.swo
 
-# OS
+### OS
 .DS_Store
 Thumbs.db
 
