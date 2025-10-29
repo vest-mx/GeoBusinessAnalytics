@@ -109,7 +109,7 @@ MIT License - смотрите файл [LICENSE](https://license/)
 ---
 
 ## 📋 **ДОПОЛНИТЕЛЬНЫЕ ФАЙЛЫ**
-requirements.txt 
+## requirements.txt 
 
 ### Основные
 dash>=2.14.0
@@ -133,7 +133,7 @@ tqdm>=4.65.0
 werkzeug>=2.3.0
 click>=8.1.0
 
-gitignore
+## gitignore
 ### Данные
 *.duckdb
 data.csv
@@ -171,7 +171,7 @@ wheels/
 .DS_Store
 Thumbs.db
 
-### 3. docs/setup_guide.md
+## docs/setup_guide.md
 
 # 📚 Полное руководство по установке
 
@@ -196,7 +196,7 @@ pip install -r requirements.txt
 Конвертируйте: python kepler_converter.py
 
 5. Запуск
-   Генерация данных
+    Генерация данных
     python datapol/gendata.py
 
     Запуск приложения  
